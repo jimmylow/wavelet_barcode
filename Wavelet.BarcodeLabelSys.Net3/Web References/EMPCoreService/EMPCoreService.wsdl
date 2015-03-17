@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://core.wavelet.webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="EMPCoreService" targetNamespace="http://core.wavelet.webservices/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://jci.wavelet.biz:8888/ws/EMPCoreService?xsd=1" namespace="http://core.wavelet.webservices/" />
+    </xsd:schema>
+  </types>
+  <message name="getItem">
+    <part name="parameters" element="tns:getItem" />
+  </message>
+  <message name="getItemResponse">
+    <part name="parameters" element="tns:getItemResponse" />
+  </message>
+  <message name="getGoodsReceivedNote">
+    <part name="parameters" element="tns:getGoodsReceivedNote" />
+  </message>
+  <message name="getGoodsReceivedNoteResponse">
+    <part name="parameters" element="tns:getGoodsReceivedNoteResponse" />
+  </message>
+  <message name="getInternalStockTransfer">
+    <part name="parameters" element="tns:getInternalStockTransfer" />
+  </message>
+  <message name="getInternalStockTransferResponse">
+    <part name="parameters" element="tns:getInternalStockTransferResponse" />
+  </message>
+  <message name="getItemByEANCode">
+    <part name="parameters" element="tns:getItemByEANCode" />
+  </message>
+  <message name="getItemByEANCodeResponse">
+    <part name="parameters" element="tns:getItemByEANCodeResponse" />
+  </message>
+  <message name="getItemByCode">
+    <part name="parameters" element="tns:getItemByCode" />
+  </message>
+  <message name="getItemByCodeResponse">
+    <part name="parameters" element="tns:getItemByCodeResponse" />
+  </message>
+  <message name="getItemFuzzySearch">
+    <part name="parameters" element="tns:getItemFuzzySearch" />
+  </message>
+  <message name="getItemFuzzySearchResponse">
+    <part name="parameters" element="tns:getItemFuzzySearchResponse" />
+  </message>
+  <message name="createInvoice">
+    <part name="parameters" element="tns:createInvoice" />
+  </message>
+  <message name="createInvoiceResponse">
+    <part name="parameters" element="tns:createInvoiceResponse" />
+  </message>
+  <portType name="EMPCore">
+    <operation name="getItem">
+      <input wsam:Action="http://core.wavelet.webservices/EMPCore/getItemRequest" message="tns:getItem" />
+      <output wsam:Action="http://core.wavelet.webservices/EMPCore/getItemResponse" message="tns:getItemResponse" />
+    </operation>
+    <operation name="getGoodsReceivedNote">
+      <input wsam:Action="http://core.wavelet.webservices/EMPCore/getGoodsReceivedNoteRequest" message="tns:getGoodsReceivedNote" />
+      <output wsam:Action="http://core.wavelet.webservices/EMPCore/getGoodsReceivedNoteResponse" message="tns:getGoodsReceivedNoteResponse" />
+    </operation>
+    <operation name="getInternalStockTransfer">
+      <input wsam:Action="http://core.wavelet.webservices/EMPCore/getInternalStockTransferRequest" message="tns:getInternalStockTransfer" />
+      <output wsam:Action="http://core.wavelet.webservices/EMPCore/getInternalStockTransferResponse" message="tns:getInternalStockTransferResponse" />
+    </operation>
+    <operation name="getItemByEANCode">
+      <input wsam:Action="http://core.wavelet.webservices/EMPCore/getItemByEANCodeRequest" message="tns:getItemByEANCode" />
+      <output wsam:Action="http://core.wavelet.webservices/EMPCore/getItemByEANCodeResponse" message="tns:getItemByEANCodeResponse" />
+    </operation>
+    <operation name="getItemByCode">
+      <input wsam:Action="http://core.wavelet.webservices/EMPCore/getItemByCodeRequest" message="tns:getItemByCode" />
+      <output wsam:Action="http://core.wavelet.webservices/EMPCore/getItemByCodeResponse" message="tns:getItemByCodeResponse" />
+    </operation>
+    <operation name="getItemFuzzySearch">
+      <input wsam:Action="http://core.wavelet.webservices/EMPCore/getItemFuzzySearchRequest" message="tns:getItemFuzzySearch" />
+      <output wsam:Action="http://core.wavelet.webservices/EMPCore/getItemFuzzySearchResponse" message="tns:getItemFuzzySearchResponse" />
+    </operation>
+    <operation name="createInvoice">
+      <input wsam:Action="http://core.wavelet.webservices/EMPCore/createInvoiceRequest" message="tns:createInvoice" />
+      <output wsam:Action="http://core.wavelet.webservices/EMPCore/createInvoiceResponse" message="tns:createInvoiceResponse" />
+    </operation>
+  </portType>
+  <binding name="EMPCorePortBinding" type="tns:EMPCore">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getItem">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getGoodsReceivedNote">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getInternalStockTransfer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getItemByEANCode">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getItemByCode">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getItemFuzzySearch">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createInvoice">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="EMPCoreService">
+    <port name="EMPCorePort" binding="tns:EMPCorePortBinding">
+      <soap:address location="http://jci.wavelet.biz:8888/ws/EMPCoreService" />
+    </port>
+  </service>
+</definitions>

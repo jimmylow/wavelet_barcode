@@ -1,0 +1,16 @@
+C:\Users\wavelet\Documents\GitHub\jimmy-pos\grn-barcode-printing\GenCode128\bin\Debug\GenCode128.dll
+C:\Users\wavelet\Documents\GitHub\jimmy-pos\grn-barcode-printing\GenCode128\bin\Debug\GenCode128.pdb
+C:\Users\wavelet\Documents\GitHub\jimmy-pos\grn-barcode-printing\GenCode128\bin\Debug\GenCode128.xml
+C:\Users\wavelet\Documents\GitHub\jimmy-pos\grn-barcode-printing\GenCode128\obj\Debug\GenCode128.Resources.resources
+C:\Users\wavelet\Documents\GitHub\jimmy-pos\grn-barcode-printing\GenCode128\obj\Debug\GenCode128.vbproj.GenerateResource.Cache
+C:\Users\wavelet\Documents\GitHub\jimmy-pos\grn-barcode-printing\GenCode128\obj\Debug\GenCode128.dll
+C:\Users\wavelet\Documents\GitHub\jimmy-pos\grn-barcode-printing\GenCode128\obj\Debug\GenCode128.xml
+C:\Users\wavelet\Documents\GitHub\jimmy-pos\grn-barcode-printing\GenCode128\obj\Debug\GenCode128.pdb
+C:\Users\Jimmy\Desktop\grn-barcode-printing\GenCode128\bin\Debug\GenCode128.dll
+C:\Users\Jimmy\Desktop\grn-barcode-printing\GenCode128\bin\Debug\GenCode128.pdb
+C:\Users\Jimmy\Desktop\grn-barcode-printing\GenCode128\bin\Debug\GenCode128.xml
+C:\Users\Jimmy\Desktop\grn-barcode-printing\GenCode128\obj\Debug\GenCode128.Resources.resources
+C:\Users\Jimmy\Desktop\grn-barcode-printing\GenCode128\obj\Debug\GenCode128.vbproj.GenerateResource.Cache
+C:\Users\Jimmy\Desktop\grn-barcode-printing\GenCode128\obj\Debug\GenCode128.dll
+C:\Users\Jimmy\Desktop\grn-barcode-printing\GenCode128\obj\Debug\GenCode128.xml
+C:\Users\Jimmy\Desktop\grn-barcode-printing\GenCode128\obj\Debug\GenCode128.pdb

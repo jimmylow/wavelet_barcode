@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Setting>
+  <WebServices>
+    <Address>http://cloud.wavelet.biz:8080/ws/EMPCoreService?wsdl</Address>	
+    <Customer>1</Customer>
+  </WebServices>
+  <PrinterSetting>
+    <PrinterName>TSC TTP-244 Plus</PrinterName>
+    <PrinterProgrammingLanguage>TSC</PrinterProgrammingLanguage>
+  </PrinterSetting>
+  <Template>
+    <CompanyNameLine1 />
+    <CompanyNameLine2>ALL IT HYPERMARKET SDN BHD</CompanyNameLine2>
+    <CompanyNameFontType>Arial</CompanyNameFontType>
+    <CompanyNameFontSize>14</CompanyNameFontSize>
+    <CompanyLogoFilename>E:\BMP-PCX\LOGO.PCX</CompanyLogoFilename>
+    <ItemCodeFontType>Arial</ItemCodeFontType>
+    <ItemCodeFontSize>7</ItemCodeFontSize>
+    <ItemNameTextAlign>LEFT</ItemNameTextAlign>
+    <ItemNameFontType>Arial</ItemNameFontType>
+    <ItemNameFontSize>20</ItemNameFontSize>
+    <ItemNameMaxLengthperLine>30</ItemNameMaxLengthperLine>
+    <ItemPriceFontType>Arial</ItemPriceFontType>
+    <ItemPriceFontSize>45</ItemPriceFontSize>
+    <BarcodeTextFontType>3</BarcodeTextFontType>
+    <XPosOffsetBarcodeItemName>0</XPosOffsetBarcodeItemName>
+    <URLFontType>Arial</URLFontType>
+    <URLFontSize>7</URLFontSize>
+    <URLText />
+    <LabelYStartPos>2</LabelYStartPos>
+    <XPosOffsetBarcodeDoubleFormat>30</XPosOffsetBarcodeDoubleFormat>
+    <XPosOffsetBarcodeText>0</XPosOffsetBarcodeText>
+	<YPosOffsetItemPrice>54</YPosOffsetItemPrice>
+	<XPosOffsetItemPrice>0</XPosOffsetItemPrice>
+    <ItemNameMaxRowLine>3</ItemNameMaxRowLine>
+	<YPosGap>0</YPosGap>
+  </Template>
+  <Barcode>
+    <BarcodeXScale>0.8</BarcodeXScale>
+    <BarcodeYScale>0.25</BarcodeYScale>
+    <BarcodeType>EAN128</BarcodeType>
+    <BarHeight>38</BarHeight>
+    <NarrowBarRatio>2</NarrowBarRatio>
+    <WideBarRatio>2</WideBarRatio>
+    <EnableDoubleFormat>TRUE</EnableDoubleFormat>
+    <UseItemCode2PrintBarcode>TRUE</UseItemCode2PrintBarcode>
+  </Barcode>
+  <LabelSetup>
+    <LabelWidth>35</LabelWidth>
+    <LabelHeight>25</LabelHeight>
+    <PrintSpeed>2.0</PrintSpeed>
+    <PrintDensity>8</PrintDensity>
+    <VerticalGap>3.048</VerticalGap>
+  </LabelSetup>
+</Setting>

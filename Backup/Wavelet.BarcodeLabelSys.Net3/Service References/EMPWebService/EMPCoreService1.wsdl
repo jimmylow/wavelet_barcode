@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://core.wavelet.webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EMPCoreService" targetNamespace="http://core.wavelet.webservices/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://allit.wavelet.biz:8080/ws/EMPCoreService?xsd=1" namespace="http://core.wavelet.webservices/" />
+    </xsd:schema>
+  </types>
+  <message name="getItem">
+    <part name="parameters" element="tns:getItem" />
+  </message>
+  <message name="getItemResponse">
+    <part name="parameters" element="tns:getItemResponse" />
+  </message>
+  <message name="getGoodsReceivedNote">
+    <part name="parameters" element="tns:getGoodsReceivedNote" />
+  </message>
+  <message name="getGoodsReceivedNoteResponse">
+    <part name="parameters" element="tns:getGoodsReceivedNoteResponse" />
+  </message>
+  <message name="getInternalStockTransfer">
+    <part name="parameters" element="tns:getInternalStockTransfer" />
+  </message>
+  <message name="getInternalStockTransferResponse">
+    <part name="parameters" element="tns:getInternalStockTransferResponse" />
+  </message>
+  <message name="getItemByEANCode">
+    <part name="parameters" element="tns:getItemByEANCode" />
+  </message>
+  <message name="getItemByEANCodeResponse">
+    <part name="parameters" element="tns:getItemByEANCodeResponse" />
+  </message>
+  <message name="getItemByCode">
+    <part name="parameters" element="tns:getItemByCode" />
+  </message>
+  <message name="getItemByCodeResponse">
+    <part name="parameters" element="tns:getItemByCodeResponse" />
+  </message>
+  <message name="getItemFuzzySearch">
+    <part name="parameters" element="tns:getItemFuzzySearch" />
+  </message>
+  <message name="getItemFuzzySearchResponse">
+    <part name="parameters" element="tns:getItemFuzzySearchResponse" />
+  </message>
+  <message name="dummyGRNItem">
+    <part name="parameters" element="tns:dummyGRNItem" />
+  </message>
+  <message name="dummyGRNItemResponse">
+    <part name="parameters" element="tns:dummyGRNItemResponse" />
+  </message>
+  <message name="dummyISTItem">
+    <part name="parameters" element="tns:dummyISTItem" />
+  </message>
+  <message name="dummyISTItemResponse">
+    <part name="parameters" element="tns:dummyISTItemResponse" />
+  </message>
+  <portType name="EMPCore">
+    <operation name="getItem">
+      <input message="tns:getItem" />
+      <output message="tns:getItemResponse" />
+    </operation>
+    <operation name="getGoodsReceivedNote">
+      <input message="tns:getGoodsReceivedNote" />
+      <output message="tns:getGoodsReceivedNoteResponse" />
+    </operation>
+    <operation name="getInternalStockTransfer">
+      <input message="tns:getInternalStockTransfer" />
+      <output message="tns:getInternalStockTransferResponse" />
+    </operation>
+    <operation name="getItemByEANCode">
+      <input message="tns:getItemByEANCode" />
+      <output message="tns:getItemByEANCodeResponse" />
+    </operation>
+    <operation name="getItemByCode">
+      <input message="tns:getItemByCode" />
+      <output message="tns:getItemByCodeResponse" />
+    </operation>
+    <operation name="getItemFuzzySearch">
+      <input message="tns:getItemFuzzySearch" />
+      <output message="tns:getItemFuzzySearchResponse" />
+    </operation>
+    <operation name="dummyGRNItem">
+      <input message="tns:dummyGRNItem" />
+      <output message="tns:dummyGRNItemResponse" />
+    </operation>
+    <operation name="dummyISTItem">
+      <input message="tns:dummyISTItem" />
+      <output message="tns:dummyISTItemResponse" />
+    </operation>
+  </portType>
+  <binding name="EMPCorePortBinding" type="tns:EMPCore">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getItem">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getGoodsReceivedNote">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getInternalStockTransfer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getItemByEANCode">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getItemByCode">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getItemFuzzySearch">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="dummyGRNItem">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="dummyISTItem">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="EMPCoreService">
+    <port name="EMPCorePort" binding="tns:EMPCorePortBinding">
+      <soap:address location="http://allit.wavelet.biz:8080/ws/EMPCoreService" />
+    </port>
+  </service>
+</definitions>

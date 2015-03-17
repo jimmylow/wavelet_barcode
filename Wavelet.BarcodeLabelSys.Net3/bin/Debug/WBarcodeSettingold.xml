@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Setting>
+  <WebServices>
+    <Address>
+http://allit.wavelet.biz:8080/ws/EMPCoreService
+</Address>
+    <Customer>1</Customer>
+  </WebServices>
+  <PrinterSetting>
+    <PrinterName>TSC TTP-243E Plus</PrinterName>
+    <PrinterProgrammingLanguage>TSC</PrinterProgrammingLanguage>
+  </PrinterSetting>
+  <Template>
+    <CompanyNameLine1 />
+    <CompanyNameLine2>ALL IT HYPERMARKET SDN BHD</CompanyNameLine2>
+    <CompanyNameFontType>Arial</CompanyNameFontType>
+    <CompanyNameFontSize>14</CompanyNameFontSize>
+    <CompanyLogoFilename>E:\BMP-PCX\LOGO.PCX</CompanyLogoFilename>
+    <ItemCodeFontType>Arial</ItemCodeFontType>
+    <ItemCodeFontSize>7</ItemCodeFontSize>
+    <ItemNameTextAlign>LEFT</ItemNameTextAlign>
+    <ItemNameFontType>1</ItemNameFontType>
+    <ItemNameFontSize>6</ItemNameFontSize>
+    <ItemNameMaxLengthperLine>26</ItemNameMaxLengthperLine>
+    <ItemPriceFontType>4</ItemPriceFontType>
+    <ItemPriceFontSize>7</ItemPriceFontSize>
+    <BarcodeTextFontType>3</BarcodeTextFontType>
+    <XPosOffsetBarcodeItemName>0</XPosOffsetBarcodeItemName>
+    <URLFontType>Arial</URLFontType>
+    <URLFontSize>7</URLFontSize>
+    <URLText />
+    <LabelYStartPos>4</LabelYStartPos>
+  </Template>
+  <Barcode>
+    <BarcodeXScale>0.8</BarcodeXScale>
+    <BarcodeYScale>0.25</BarcodeYScale>
+    <BarcodeType>EAN128</BarcodeType>
+    <BarHeight>40.6</BarHeight>
+    <NarrowBarRatio>2</NarrowBarRatio>
+    <WideBarRatio>2</WideBarRatio>
+    <EnableDoubleFormat>TRUE</EnableDoubleFormat>
+    <UseItemCode2PrintBarcode>TRUE</UseItemCode2PrintBarcode>
+  </Barcode>
+  <LabelSetup>
+    <LabelWidth>35</LabelWidth>
+    <LabelHeight>25</LabelHeight>
+    <PrintSpeed>2.0</PrintSpeed>
+    <PrintDensity>8</PrintDensity>
+    <VerticalGap>3.048</VerticalGap>
+  </LabelSetup>
+</Setting>

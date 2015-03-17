@@ -1,0 +1,58 @@
+-Version 0.15
+- Added windows font for TSC Printer on Item name and Item Price
+- Center-align for barcode text
+- Offset Option for barcode (used only when Double format is turn on)
+- Option for Y Position offset after barcode text
+
+-Vervsion 0.14
+- Change the way to use the web service by using dyanmic discovery and invocation of web service so that if there are fields add in EMP, the barcode program doesn't need to re-compile. 
+
+-Version 0.13
+Added option to adjst the Label Y Start Position. Useful when there is company logo on top of the label. 
+
+-Version 0.12
+-Added option to adjust Font size for company name, item code, item name, item price for windows font used by Argox printer. 
+- Add option to include URL for Argox Printer. 
+
+-Version 0.11
+- Added auto space adjust if only print out one line of company name. 
+- Added '2' space between barcode and barcode text. 
+
+-Version 0.10
+-Fixed bug to print item name of 52 character. (change the algorithm to be check the present of string)
+
+-Version 0.9
+-Added option to use Argox Printer (under development)
+
+Version 0.8
+- Option to change the human readable barcode text font type
+- Option to offset the x-position for barcode and item name, only for left-align item name
+
+Version 0.7
+- Option to use item code to print barcode
+- Option to set the item name max characters length per line.
+- Option to Enable double format for barcode printing. > 5 barcode with alphabet, code 39 will be used. 
+
+Version 0.6
+- Save the Printer Name. Only need to setup one time.
+- Fixed bug on Max char to print per line
+
+Vervsion 0.5
+- Price will not be printed if RM0.00.
+- Space between RM and price when print out for ease to see. 
+- Smart break down the item name to fit the max length. 
+
+Version 0.4 
+- Addin Edit Item Feature for user to Edit existing item
+- Able to Print Logo in PCX format. 
+- Able to Print Windows Font for company name
+
+Version 0.3
+- Addin Add Item Feature for user to add item extra item
+
+Version 0.2 
+- Bug fixed with lenght of itemname equal to 52
+- Addin more options for Barcode and Label Setup in WBarcodeSetting.xml
+
+Version 0.1 
+- Build with first release to production
