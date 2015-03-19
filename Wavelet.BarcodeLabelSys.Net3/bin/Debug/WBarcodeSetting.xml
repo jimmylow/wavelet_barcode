@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Setting>
   <WebServices>
-    <Address>http://cloud.wavelet.biz:8080/ws/EMPCoreService?wsdl</Address>	
+    <Address>http://jci.wavelet.biz:8888/ws/EMPCoreService</Address>	
     <Customer>1</Customer>
   </WebServices>
   <PrinterSetting>

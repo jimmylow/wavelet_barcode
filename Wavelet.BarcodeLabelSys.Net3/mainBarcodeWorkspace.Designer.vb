@@ -23,36 +23,36 @@ Partial Class mainBarcodeWorkspace
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(mainBarcodeWorkspace))
-        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog
-        Me.printConfigButton = New System.Windows.Forms.Button
-        Me.GenerateLabelsButton = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.printPreviewButton = New System.Windows.Forms.Button
-        Me.PreviewPrint = New System.Windows.Forms.PrintPreviewDialog
-        Me.btnSearch = New System.Windows.Forms.Button
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.colUnitPrice = New System.Windows.Forms.ColumnHeader
-        Me.lvItemInfo = New System.Windows.Forms.ListView
-        Me.colQuantity = New System.Windows.Forms.ColumnHeader
-        Me.colItemCode = New System.Windows.Forms.ColumnHeader
-        Me.colEANCode = New System.Windows.Forms.ColumnHeader
-        Me.colItemName = New System.Windows.Forms.ColumnHeader
-        Me.colBracode1 = New System.Windows.Forms.ColumnHeader
-        Me.colBarcode2 = New System.Windows.Forms.ColumnHeader
-        Me.colBarcode3 = New System.Windows.Forms.ColumnHeader
-        Me.colBarcode4 = New System.Windows.Forms.ColumnHeader
-        Me.txtGRNCode = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.btnSelectAllRow = New System.Windows.Forms.Button
-        Me.cbxSeachBy = New System.Windows.Forms.ComboBox
-        Me.lbStatus = New System.Windows.Forms.Label
-        Me.btAddItem = New System.Windows.Forms.Button
-        Me.btnClearItems = New System.Windows.Forms.Button
-        Me.btnTSCPrinterFF = New System.Windows.Forms.Button
-        Me.lbVersion = New System.Windows.Forms.Label
-        Me.btEditItem = New System.Windows.Forms.Button
-        Me.btnDownloadLogo = New System.Windows.Forms.Button
-        Me.ColumnHeader1 = New System.Windows.Forms.ColumnHeader
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
+        Me.printConfigButton = New System.Windows.Forms.Button()
+        Me.GenerateLabelsButton = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.printPreviewButton = New System.Windows.Forms.Button()
+        Me.PreviewPrint = New System.Windows.Forms.PrintPreviewDialog()
+        Me.btnSearch = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.colUnitPrice = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.lvItemInfo = New System.Windows.Forms.ListView()
+        Me.colQuantity = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colItemCode = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colEANCode = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colItemName = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colCategory1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colCategory2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colCategory3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colCategory4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colCategory5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.txtGRNCode = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnSelectAllRow = New System.Windows.Forms.Button()
+        Me.cbxSeachBy = New System.Windows.Forms.ComboBox()
+        Me.lbStatus = New System.Windows.Forms.Label()
+        Me.btAddItem = New System.Windows.Forms.Button()
+        Me.btnClearItems = New System.Windows.Forms.Button()
+        Me.btnTSCPrinterFF = New System.Windows.Forms.Button()
+        Me.lbVersion = New System.Windows.Forms.Label()
+        Me.btEditItem = New System.Windows.Forms.Button()
+        Me.btnDownloadLogo = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -136,7 +136,7 @@ Partial Class mainBarcodeWorkspace
         'lvItemInfo
         '
         Me.lvItemInfo.CheckBoxes = True
-        Me.lvItemInfo.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.colQuantity, Me.colItemCode, Me.colEANCode, Me.colItemName, Me.colUnitPrice, Me.colBracode1, Me.colBarcode2, Me.colBarcode3, Me.colBarcode4, Me.ColumnHeader1})
+        Me.lvItemInfo.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.colQuantity, Me.colItemCode, Me.colEANCode, Me.colItemName, Me.colUnitPrice, Me.colCategory1, Me.colCategory2, Me.colCategory3, Me.colCategory4, Me.colCategory5})
         Me.lvItemInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lvItemInfo.FullRowSelect = True
         Me.lvItemInfo.GridLines = True
@@ -172,25 +172,30 @@ Partial Class mainBarcodeWorkspace
         Me.colItemName.Text = "Item Name"
         Me.colItemName.Width = 230
         '
-        'colBracode1
+        'colCategory1
         '
-        Me.colBracode1.Text = "Category2"
-        Me.colBracode1.Width = 120
+        Me.colCategory1.Text = "Category1"
+        Me.colCategory1.Width = 120
         '
-        'colBarcode2
+        'colCategory2
         '
-        Me.colBarcode2.Text = "Category3"
-        Me.colBarcode2.Width = 120
+        Me.colCategory2.Text = "Category2"
+        Me.colCategory2.Width = 120
         '
-        'colBarcode3
+        'colCategory3
         '
-        Me.colBarcode3.Text = "Category4"
-        Me.colBarcode3.Width = 120
+        Me.colCategory3.Text = "Category3"
+        Me.colCategory3.Width = 120
         '
-        'colBarcode4
+        'colCategory4
         '
-        Me.colBarcode4.Text = "Category5"
-        Me.colBarcode4.Width = 120
+        Me.colCategory4.Text = "Category4"
+        Me.colCategory4.Width = 120
+        '
+        'colCategory5
+        '
+        Me.colCategory5.Text = "Category5"
+        Me.colCategory5.Width = 120
         '
         'txtGRNCode
         '
@@ -282,7 +287,7 @@ Partial Class mainBarcodeWorkspace
         '
         'btEditItem
         '
-        Me.btEditItem.Location = New System.Drawing.Point(206, 572)
+        Me.btEditItem.Location = New System.Drawing.Point(207, 572)
         Me.btEditItem.Name = "btEditItem"
         Me.btEditItem.Size = New System.Drawing.Size(133, 23)
         Me.btEditItem.TabIndex = 24
@@ -297,10 +302,6 @@ Partial Class mainBarcodeWorkspace
         Me.btnDownloadLogo.TabIndex = 25
         Me.btnDownloadLogo.Text = "Download Logo"
         Me.btnDownloadLogo.UseVisualStyleBackColor = True
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "Category6"
         '
         'mainBarcodeWorkspace
         '
@@ -360,10 +361,10 @@ Partial Class mainBarcodeWorkspace
     Friend WithEvents lbVersion As System.Windows.Forms.Label
     Friend WithEvents btEditItem As System.Windows.Forms.Button
     Friend WithEvents btnDownloadLogo As System.Windows.Forms.Button
-    Friend WithEvents colBracode1 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents colBarcode2 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents colBarcode3 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents colBarcode4 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader1 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents colCategory1 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents colCategory2 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents colCategory3 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents colCategory4 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents colCategory5 As System.Windows.Forms.ColumnHeader
 
 End Class

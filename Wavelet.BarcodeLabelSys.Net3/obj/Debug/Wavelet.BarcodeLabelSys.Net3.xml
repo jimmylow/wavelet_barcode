@@ -6,7 +6,20 @@ Wavelet.BarcodeLabelSys.Net3
 </name>
 </assembly>
 <members>
-<member name="M:Wavelet.BarcodeLabelSys.Net3.EMPCoreService.EMPCoreService.#ctor">
+<member name="P:Wavelet.BarcodeLabelSys.Net3.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Wavelet.BarcodeLabelSys.Net3.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Wavelet.BarcodeLabelSys.Net3.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Wavelet.BarcodeLabelSys.Net3.EMPCoreService.EMPCoreService.#ctor">
 	<remarks/>
 </member><member name="E:Wavelet.BarcodeLabelSys.Net3.EMPCoreService.EMPCoreService.getItemCompleted">
 	<remarks/>
@@ -1296,19 +1309,6 @@ Wavelet.BarcodeLabelSys.Net3
 	<remarks/>
 </member><member name="T:Wavelet.BarcodeLabelSys.Net3.EMPCoreService.createInvoiceCompletedEventArgs">
 	<remarks/>
-</member><member name="P:Wavelet.BarcodeLabelSys.Net3.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:Wavelet.BarcodeLabelSys.Net3.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:Wavelet.BarcodeLabelSys.Net3.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
 </member>
 </members>
 </doc>

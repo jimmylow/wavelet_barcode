@@ -2540,11 +2540,8 @@ Public Class mainBarcodeWorkspace
             boxEditItem.txItemName.Text = .ItemName
             boxEditItem.cboPriceCheked.Text = .PriceChecked
             boxEditItem.txItemPrice.Text = .Price
-            If .Category1 <> "" Then
-                boxEditItem.txItemPrice.Text = .Category1
-            End If
-
-            'boxEditItem.txtCategory1.Text = .Category1
+            
+            boxEditItem.txtCategory1.Text = .Category1
             boxEditItem.txtCategory2.Text = .Category2
             boxEditItem.txtCategory3.Text = .Category3
             boxEditItem.txtCategory4.Text = .Category4
@@ -2566,7 +2563,7 @@ Public Class mainBarcodeWorkspace
                     .ItemName = boxEditItem.txItemName.Text.Trim
                     .PriceChecked = boxEditItem.cboPriceCheked.Text
                     .Price = boxEditItem.txItemPrice.Text.Trim
-                    '.Category1 = boxEditItem.txtCategory1.Text.Trim
+                    .Category1 = boxEditItem.txtCategory1.Text.Trim
                     .Category2 = boxEditItem.txtCategory2.Text.Trim
                     .Category3 = boxEditItem.txtCategory3.Text.Trim
                     .Category4 = boxEditItem.txtCategory4.Text.Trim
@@ -2586,11 +2583,11 @@ Public Class mainBarcodeWorkspace
                 lvItem.SubItems(3).Text = boxEditItem.txItemName.Text
                 'lvItem.SubItems(4).Text = boxEditItem.cboPriceCheked.Text
                 lvItem.SubItems(4).Text = boxEditItem.txItemPrice.Text
-                lvItem.SubItems(5).Text = boxEditItem.txtCategory2.Text
-                lvItem.SubItems(6).Text = boxEditItem.txtCategory3.Text
-                lvItem.SubItems(7).Text = boxEditItem.txtCategory4.Text
-                lvItem.SubItems(8).Text = boxEditItem.txtCategory5.Text
-                lvItem.SubItems(9).Text = boxEditItem.txtCategory6.Text
+                lvItem.SubItems(5).Text = boxEditItem.txtCategory1.Text
+                lvItem.SubItems(6).Text = boxEditItem.txtCategory2.Text
+                lvItem.SubItems(7).Text = boxEditItem.txtCategory3.Text
+                lvItem.SubItems(8).Text = boxEditItem.txtCategory4.Text
+                lvItem.SubItems(9).Text = boxEditItem.txtCategory5.Text
             End If
         End If
 
@@ -2616,7 +2613,7 @@ Public Class mainBarcodeWorkspace
                     .ItemName = boxAddItem.txItemName.Text.Trim
                     .PriceChecked = boxAddItem.cboPriceCheked.Text
                     .Price = boxAddItem.txItemPrice.Text.Trim
-                    '.Category1 = boxAddItem.txtCategory1.Text.Trim
+                    .Category1 = boxAddItem.txtCategory1.Text.Trim
                     .Category2 = boxAddItem.txtCategory2.Text.Trim
                     .Category3 = boxAddItem.txtCategory3.Text.Trim
                     .Category4 = boxAddItem.txtCategory4.Text.Trim
@@ -2719,7 +2716,7 @@ Public Class mainBarcodeWorkspace
         cbxSeachBy.SelectedIndex = 0
         txtGRNCode.Focus()
 
-        lbVersion.Text = "Version 0.19"
+        lbVersion.Text = "Version 0.20"
 
     End Sub
 
@@ -3312,12 +3309,11 @@ Public Class mainBarcodeWorkspace
             .SubItems.Add(bItem.ItemName)
             '.SubItems.Add(bItem.PriceChecked)
             .SubItems.Add(bItem.Price)
+            .SubItems.Add(bItem.Category1)
             .SubItems.Add(bItem.Category2)
             .SubItems.Add(bItem.Category3)
             .SubItems.Add(bItem.Category4)
             .SubItems.Add(bItem.Category5)
-            .SubItems.Add(bItem.Category6)
-
         End With
 
         lvItemInfo.Items.Add(lvItem)
@@ -3332,7 +3328,8 @@ Public Class mainBarcodeWorkspace
             .EANCode = itmObj.EANCode
             .ItemName = itmObj.name
             .PriceChecked = ""
-            .Price = Format(itmObj.priceList, "0.00")
+            Dim decimalVal As Decimal = System.Convert.ToDecimal(itmObj.priceList)
+            .Price = Format(decimalVal, "#,##0.00")
             .Category1 = itmObj.category1
             .Category2 = itmObj.category2
             .Category3 = itmObj.category3
@@ -3344,10 +3341,6 @@ Public Class mainBarcodeWorkspace
             .Category9 = itmObj.category9
             .Category10 = itmObj.category10
             .PrintPage2 = False
-
-            If .Category1.Length <> 0 Then
-                .Price = .Category1
-            End If
         End With
 
         Return item

@@ -22,44 +22,46 @@ Partial Class AddItemBoxFrm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txItemCode = New System.Windows.Forms.TextBox
-        Me.txItemName1 = New System.Windows.Forms.TextBox
-        Me.txItemPrice = New System.Windows.Forms.TextBox
-        Me.txItemQuantity = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.btnAddItem = New System.Windows.Forms.Button
-        Me.txEANCode = New System.Windows.Forms.TextBox
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.txItemName = New System.Windows.Forms.RichTextBox
-        Me.btnCancel = New System.Windows.Forms.Button
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.txtCategory2 = New System.Windows.Forms.TextBox
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.txtCategory3 = New System.Windows.Forms.TextBox
-        Me.cboPriceCheked = New System.Windows.Forms.ComboBox
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.txtCategory4 = New System.Windows.Forms.TextBox
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.TabControl1 = New System.Windows.Forms.TabControl
-        Me.TabPage1 = New System.Windows.Forms.TabPage
-        Me.TabPage2 = New System.Windows.Forms.TabPage
-        Me.Label14 = New System.Windows.Forms.Label
-        Me.chkPrintPage2 = New System.Windows.Forms.CheckBox
-        Me.Label11 = New System.Windows.Forms.Label
-        Me.txtCategory8 = New System.Windows.Forms.TextBox
-        Me.Label12 = New System.Windows.Forms.Label
-        Me.txtCategory7 = New System.Windows.Forms.TextBox
-        Me.Label13 = New System.Windows.Forms.Label
-        Me.Label15 = New System.Windows.Forms.Label
-        Me.txtCategory5 = New System.Windows.Forms.TextBox
-        Me.txtCategory6 = New System.Windows.Forms.TextBox
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.txtCategory9 = New System.Windows.Forms.TextBox
-        Me.txtCategory10 = New System.Windows.Forms.TextBox
+        Me.txItemCode = New System.Windows.Forms.TextBox()
+        Me.txItemName1 = New System.Windows.Forms.TextBox()
+        Me.txItemPrice = New System.Windows.Forms.TextBox()
+        Me.txItemQuantity = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.btnAddItem = New System.Windows.Forms.Button()
+        Me.txEANCode = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txItemName = New System.Windows.Forms.RichTextBox()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtCategory2 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtCategory3 = New System.Windows.Forms.TextBox()
+        Me.cboPriceCheked = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtCategory4 = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.txtCategory5 = New System.Windows.Forms.TextBox()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.txtCategory10 = New System.Windows.Forms.TextBox()
+        Me.txtCategory9 = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.chkPrintPage2 = New System.Windows.Forms.CheckBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtCategory8 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.txtCategory7 = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.txtCategory6 = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.txtCategory1 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -149,7 +151,7 @@ Partial Class AddItemBoxFrm
         Me.btnAddItem.Location = New System.Drawing.Point(236, 452)
         Me.btnAddItem.Name = "btnAddItem"
         Me.btnAddItem.Size = New System.Drawing.Size(97, 28)
-        Me.btnAddItem.TabIndex = 9
+        Me.btnAddItem.TabIndex = 60
         Me.btnAddItem.Text = "Add/Edit Item"
         Me.btnAddItem.UseVisualStyleBackColor = True
         '
@@ -186,7 +188,7 @@ Partial Class AddItemBoxFrm
         Me.btnCancel.Location = New System.Drawing.Point(351, 452)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(97, 28)
-        Me.btnCancel.TabIndex = 10
+        Me.btnCancel.TabIndex = 70
         Me.btnCancel.Text = "&Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
@@ -194,7 +196,7 @@ Partial Class AddItemBoxFrm
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(3, 12)
+        Me.Label6.Location = New System.Drawing.Point(3, 48)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(86, 20)
         Me.Label6.TabIndex = 14
@@ -204,7 +206,7 @@ Partial Class AddItemBoxFrm
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(3, 45)
+        Me.Label7.Location = New System.Drawing.Point(3, 81)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(86, 20)
         Me.Label7.TabIndex = 16
@@ -213,7 +215,7 @@ Partial Class AddItemBoxFrm
         'txtCategory2
         '
         Me.txtCategory2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCategory2.Location = New System.Drawing.Point(101, 12)
+        Me.txtCategory2.Location = New System.Drawing.Point(101, 48)
         Me.txtCategory2.Name = "txtCategory2"
         Me.txtCategory2.Size = New System.Drawing.Size(264, 26)
         Me.txtCategory2.TabIndex = 2
@@ -222,7 +224,7 @@ Partial Class AddItemBoxFrm
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(3, 78)
+        Me.Label8.Location = New System.Drawing.Point(3, 114)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(86, 20)
         Me.Label8.TabIndex = 18
@@ -231,7 +233,7 @@ Partial Class AddItemBoxFrm
         'txtCategory3
         '
         Me.txtCategory3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCategory3.Location = New System.Drawing.Point(101, 45)
+        Me.txtCategory3.Location = New System.Drawing.Point(101, 81)
         Me.txtCategory3.Name = "txtCategory3"
         Me.txtCategory3.Size = New System.Drawing.Size(264, 26)
         Me.txtCategory3.TabIndex = 3
@@ -251,7 +253,7 @@ Partial Class AddItemBoxFrm
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(3, 111)
+        Me.Label9.Location = New System.Drawing.Point(3, 147)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(86, 20)
         Me.Label9.TabIndex = 21
@@ -260,7 +262,7 @@ Partial Class AddItemBoxFrm
         'txtCategory4
         '
         Me.txtCategory4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCategory4.Location = New System.Drawing.Point(101, 78)
+        Me.txtCategory4.Location = New System.Drawing.Point(101, 114)
         Me.txtCategory4.Name = "txtCategory4"
         Me.txtCategory4.Size = New System.Drawing.Size(264, 26)
         Me.txtCategory4.TabIndex = 4
@@ -291,17 +293,17 @@ Partial Class AddItemBoxFrm
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.TabControl1.Location = New System.Drawing.Point(22, 220)
+        Me.TabControl1.Location = New System.Drawing.Point(22, 209)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(405, 207)
+        Me.TabControl1.Size = New System.Drawing.Size(405, 224)
         Me.TabControl1.TabIndex = 6
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.Label16)
+        Me.TabPage1.Controls.Add(Me.txtCategory1)
         Me.TabPage1.Controls.Add(Me.txtCategory5)
-        Me.TabPage1.Controls.Add(Me.txtCategory6)
-        Me.TabPage1.Controls.Add(Me.Label15)
         Me.TabPage1.Controls.Add(Me.Label6)
         Me.TabPage1.Controls.Add(Me.Label9)
         Me.TabPage1.Controls.Add(Me.txtCategory2)
@@ -312,13 +314,23 @@ Partial Class AddItemBoxFrm
         Me.TabPage1.Location = New System.Drawing.Point(4, 29)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(397, 174)
+        Me.TabPage1.Size = New System.Drawing.Size(397, 191)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Page1"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
+        'txtCategory5
+        '
+        Me.txtCategory5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCategory5.Location = New System.Drawing.Point(101, 147)
+        Me.txtCategory5.Name = "txtCategory5"
+        Me.txtCategory5.Size = New System.Drawing.Size(264, 26)
+        Me.txtCategory5.TabIndex = 24
+        '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.txtCategory6)
+        Me.TabPage2.Controls.Add(Me.Label15)
         Me.TabPage2.Controls.Add(Me.txtCategory10)
         Me.TabPage2.Controls.Add(Me.txtCategory9)
         Me.TabPage2.Controls.Add(Me.Label10)
@@ -332,15 +344,41 @@ Partial Class AddItemBoxFrm
         Me.TabPage2.Location = New System.Drawing.Point(4, 29)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(397, 174)
+        Me.TabPage2.Size = New System.Drawing.Size(397, 191)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Page2"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
+        'txtCategory10
+        '
+        Me.txtCategory10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCategory10.Location = New System.Drawing.Point(101, 134)
+        Me.txtCategory10.Name = "txtCategory10"
+        Me.txtCategory10.Size = New System.Drawing.Size(264, 26)
+        Me.txtCategory10.TabIndex = 40
+        '
+        'txtCategory9
+        '
+        Me.txtCategory9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCategory9.Location = New System.Drawing.Point(101, 101)
+        Me.txtCategory9.Name = "txtCategory9"
+        Me.txtCategory9.Size = New System.Drawing.Size(264, 26)
+        Me.txtCategory9.TabIndex = 39
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(3, 134)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(95, 20)
+        Me.Label10.TabIndex = 32
+        Me.Label10.Text = "Category 10"
+        '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(4, 137)
+        Me.Label14.Location = New System.Drawing.Point(4, 160)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(41, 20)
         Me.Label14.TabIndex = 31
@@ -350,17 +388,17 @@ Partial Class AddItemBoxFrm
         '
         Me.chkPrintPage2.AutoSize = True
         Me.chkPrintPage2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.chkPrintPage2.Location = New System.Drawing.Point(101, 141)
+        Me.chkPrintPage2.Location = New System.Drawing.Point(101, 164)
         Me.chkPrintPage2.Name = "chkPrintPage2"
         Me.chkPrintPage2.Size = New System.Drawing.Size(15, 14)
-        Me.chkPrintPage2.TabIndex = 30
+        Me.chkPrintPage2.TabIndex = 50
         Me.chkPrintPage2.UseVisualStyleBackColor = True
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(3, 78)
+        Me.Label11.Location = New System.Drawing.Point(3, 101)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(86, 20)
         Me.Label11.TabIndex = 29
@@ -369,16 +407,16 @@ Partial Class AddItemBoxFrm
         'txtCategory8
         '
         Me.txtCategory8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCategory8.Location = New System.Drawing.Point(101, 45)
+        Me.txtCategory8.Location = New System.Drawing.Point(101, 68)
         Me.txtCategory8.Name = "txtCategory8"
         Me.txtCategory8.Size = New System.Drawing.Size(264, 26)
-        Me.txtCategory8.TabIndex = 4
+        Me.txtCategory8.TabIndex = 38
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(3, 12)
+        Me.Label12.Location = New System.Drawing.Point(3, 35)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(86, 20)
         Me.Label12.TabIndex = 27
@@ -387,72 +425,56 @@ Partial Class AddItemBoxFrm
         'txtCategory7
         '
         Me.txtCategory7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCategory7.Location = New System.Drawing.Point(101, 12)
+        Me.txtCategory7.Location = New System.Drawing.Point(101, 35)
         Me.txtCategory7.Name = "txtCategory7"
         Me.txtCategory7.Size = New System.Drawing.Size(264, 26)
-        Me.txtCategory7.TabIndex = 3
+        Me.txtCategory7.TabIndex = 37
         '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(3, 45)
+        Me.Label13.Location = New System.Drawing.Point(3, 68)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(86, 20)
         Me.Label13.TabIndex = 28
         Me.Label13.Text = "Category 8"
         '
+        'txtCategory6
+        '
+        Me.txtCategory6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCategory6.Location = New System.Drawing.Point(101, 5)
+        Me.txtCategory6.Name = "txtCategory6"
+        Me.txtCategory6.Size = New System.Drawing.Size(264, 26)
+        Me.txtCategory6.TabIndex = 36
+        '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(3, 143)
+        Me.Label15.Location = New System.Drawing.Point(3, 6)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(86, 20)
-        Me.Label15.TabIndex = 23
+        Me.Label15.TabIndex = 35
         Me.Label15.Text = "Category 6"
         '
-        'txtCategory5
+        'Label16
         '
-        Me.txtCategory5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCategory5.Location = New System.Drawing.Point(101, 111)
-        Me.txtCategory5.Name = "txtCategory5"
-        Me.txtCategory5.Size = New System.Drawing.Size(264, 26)
-        Me.txtCategory5.TabIndex = 24
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(3, 16)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(86, 20)
+        Me.Label16.TabIndex = 26
+        Me.Label16.Text = "Category 1"
         '
-        'txtCategory6
+        'txtCategory1
         '
-        Me.txtCategory6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCategory6.Location = New System.Drawing.Point(101, 142)
-        Me.txtCategory6.Name = "txtCategory6"
-        Me.txtCategory6.Size = New System.Drawing.Size(264, 26)
-        Me.txtCategory6.TabIndex = 25
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(3, 111)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(95, 20)
-        Me.Label10.TabIndex = 32
-        Me.Label10.Text = "Category 10"
-        '
-        'txtCategory9
-        '
-        Me.txtCategory9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCategory9.Location = New System.Drawing.Point(101, 78)
-        Me.txtCategory9.Name = "txtCategory9"
-        Me.txtCategory9.Size = New System.Drawing.Size(264, 26)
-        Me.txtCategory9.TabIndex = 33
-        '
-        'txtCategory10
-        '
-        Me.txtCategory10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCategory10.Location = New System.Drawing.Point(101, 111)
-        Me.txtCategory10.Name = "txtCategory10"
-        Me.txtCategory10.Size = New System.Drawing.Size(264, 26)
-        Me.txtCategory10.TabIndex = 34
+        Me.txtCategory1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCategory1.Location = New System.Drawing.Point(101, 16)
+        Me.txtCategory1.Name = "txtCategory1"
+        Me.txtCategory1.Size = New System.Drawing.Size(264, 26)
+        Me.txtCategory1.TabIndex = 1
         '
         'AddItemBoxFrm
         '
@@ -507,10 +529,12 @@ Partial Class AddItemBoxFrm
     Friend WithEvents txtCategory7 As System.Windows.Forms.TextBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents txtCategory5 As System.Windows.Forms.TextBox
-    Friend WithEvents txtCategory6 As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txtCategory10 As System.Windows.Forms.TextBox
     Friend WithEvents txtCategory9 As System.Windows.Forms.TextBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents txtCategory1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtCategory6 As System.Windows.Forms.TextBox
+    Friend WithEvents Label15 As System.Windows.Forms.Label
 End Class
